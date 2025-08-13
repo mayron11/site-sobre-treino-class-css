@@ -1,0 +1,220 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.cabecalho {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+.cabecalho i {
+    margin-right: 10px;
+}
+
+.data-hoje {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Card de Treino */
+.treino-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    flex: 2;
+}
+
+.treino-titulo {
+    color: #2c3e50;
+    margin-top: 0;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+}
+
+.treino-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.dificuldade {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.dificuldade.media {
+    background-color: #f39c12;
+    color: white;
+}
+
+.duracao {
+    color: #7f8c8d;
+}
+
+/* Lista de Exercícios */
+.exercicios-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.exercicio {
+    border: 1px solid #ecf0f1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.exercicio-cabecalho {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exercicio-nome {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.exercicio-series {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.exercicio-detalhes {
+    padding: 15px;
+}
+
+.exercicio-descricao {
+    margin-top: 0;
+    color: #7f8c8d;
+    line-height: 1.5;
+}
+
+.exercicio-musculos {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.musculo {
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.musculo.peito {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.musculo.triceps {
+    background-color: #9b59b6;
+    color: white;
+}
+
+.musculo.ombro {
+    background-color: #1abc9c;
+    color: white;
+}
+
+/* Botões */
+.treino-acoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.botao-primario, .botao-secundario {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.botao-primario {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.botao-primario:hover {
+    background-color: #c0392b;
+}
+
+.botao-secundario {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+.botao-secundario:hover {
+    background-color: #bdc3c7;
+}
+
+/* Card de Dicas */
+.dicas-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    align-self: flex-start;
+}
+
+.dicas-titulo {
+    color: #2c3e50;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dica-texto {
+    line-height: 1.6;
+}
+
+.dica-imagem {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
